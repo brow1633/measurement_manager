@@ -1,4 +1,4 @@
-name: CMake with GTest on Ubuntu
+name: CI
 
 on:
   push:
