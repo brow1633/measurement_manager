@@ -1,4 +1,4 @@
-# Measurement Manager
+# Measurement Manager [![CI](https://github.com/brow1633/measurement_manager/actions/workflows/cmake-single-platform.yml/badge.svg)](https://github.com/brow1633/measurement_manager/actions/workflows/cmake-single-platform.yml)
 
 A minimal, generic C++ framework for state propagation and measurement application in recursive filters with delayed measurements support. Perfect for Kalman filters, particle filters, and other estimation algorithms that need to handle out-of-order measurements.
 
