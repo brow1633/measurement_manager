@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 
-// Simple 1D position/velocity state
+// Simple 1D position/velocity/acceleration state
 struct KalmanState {
     double position = 0.0;
     double velocity = 0.0;
@@ -26,7 +26,6 @@ int main() {
     auto predict = [&](Duration dt) -> KalmanState {
         double dt_sec = dt.count() / 1000.0;
         
-        // Simple constant velocity model
         current_state.position += current_state.velocity * dt_sec + 0.5 * current_state.acceleration * dt_sec;
         current_state.velocity += current_state.acceleration * dt_sec;
         // Update covariance matrices...
